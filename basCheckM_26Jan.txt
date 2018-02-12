@@ -1,0 +1,128 @@
+  372  cd /home/divyae/divyae2/MVPdata/MVP
+  373  unzip phage_seeker.zip 
+  374  ls -l
+  375  perl ./phage_seeker.
+  376  perl ./phage_seeker.pl 
+  377  perl ./phage_seeker.pl -i 2 -taxfile superkingdom2descendents.txt -interactionfile mvp_interactions.txt -repseqfile Vseq\&C/mvp_viral_cluster_representative_seqs.txt > bacteria.phage_seeker.out
+  378  ls -lrth
+  379  wc -l bacteria.phage_seeker.out
+  380  less -S bacteria.phage_seeker.out
+  381  head bacteria.phage_seeker.out
+  382  grep -w 23414 Vseq\&C/*
+  383  grep -w 23414 Vseq\&C/* | wc
+  384  grep -w 23414 Vseq\&C/* | less -S
+  385  less -S Vseq\&C/mvp_viral_cluster_representative_seqs.txt 
+  386  grep -w 23414 Vseq\&C/* | less -S
+  387  less -S bacteria.phage_seeker.out
+  388  ls 
+  389  ls -lh
+  390  perl ./phage_seeker.pl -i 2157 -taxfile superkingdom2descendents.txt -interactionfile mvp_interactions.txt -repseqfile Vseq\&C/mvp_viral_cluster_representative_seqs.txt > archaea.phage_seeker.out
+  391  ls -l
+  392  ls -lrth
+  393  wc -l bacteria.phage_seeker.out archaea.phage_seeker.out 
+  394  less archaea.phage_seeker.out 
+  395  ls /hosts/linuxhome/mgx/tmp/PATRIC/
+  396  cd /hosts/linuxhome/mgx/tmp/PATRIC/
+  397  ls -l
+  398  ls patricdb-2017-12-04
+  399  ls -l patricdb-2018-01-16
+  400  ls -l patricdb-2017-11-24
+  401  ls -l
+  402  ls -l patricdb-2017-11-24
+  403  less patricdb-2017-11-24/1120917.3.fna 
+  404  less patricdb-2017-11-24/1120917.3.fna 
+  405  less patricdb-2017-11-24/551115.6.fna
+  406  ls -l patricdb-2017-11-24/264.*fna
+  407  ls -l patricdb-201*/264.*fna
+  408  head -1 patricdb-2017-06-14/264.17.fna patricdb-2017-06-14/264.20.fna patricdb-2017-06-14/264.22.fna patricdb-2017-06-14/264.23.fna
+  409  ls
+  410  ls patricdb-2017-06-14/CheckM/ | wc
+  411  ls patricdb-2017-06-14/CheckM/
+  412  ls patricdb-2017-06-14/CheckM/batch151 | wc
+  413  ls patricdb-2017-06-14/CheckM/batch151
+  414  ls patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  415  lesxs patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  416  less patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  417  less patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  418  less -S patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  419  cut -d "."  patricdb-2017-06-14/CheckM/batch151/summary.txt | head
+  420  cut -d "." -f 1 patricdb-2017-06-14/CheckM/batch151/summary.txt | head
+  421  less -S patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  422  cut -d "." -f 1 patricdb-2017-06-14/CheckM/batch151/summary.txt | head
+  423  ls
+  424  touch checkm_results.txt
+  425  head patricdb-2017-06-14/CheckM/batch151/summary.txt
+  426  head patricdb-2017-06-14/CheckM/batch151/summary.txt | perl -ne '@a=split/\t/,$_;'
+  427  head patricdb-2017-06-14/CheckM/batch151/summary.txt | perl -ne '@a=split/\t/,$_;@b=split/\./,$a[0];$s=$a[-3]-$a[-2];print"$b[0]\t$a[0]\t$s\t$_";' | less -S
+  428  cat patricdb-*/CheckM/batch*/summary.txt | perl -ne '@a=split/\t/,$_;@b=split/\./,$a[0];$s=$a[-3]-$a[-2];print"$b[0]\t$a[0]\t$s\t$_";' > checkm_results.txt 
+  429  cd /home/divyae/divyae2/MVPdata/MVP
+  430  unzip phage_seeker.zip 
+  431  ls -l
+  432  perl ./phage_seeker.
+  433  perl ./phage_seeker.pl 
+  434  perl ./phage_seeker.pl -i 2 -taxfile superkingdom2descendents.txt -interactionfile mvp_interactions.txt -repseqfile Vseq\&C/mvp_viral_cluster_representative_seqs.txt > bacteria.phage_seeker.out
+  435  ls -lrth
+  436  wc -l bacteria.phage_seeker.out
+  437  less -S bacteria.phage_seeker.out
+  438  head bacteria.phage_seeker.out
+  439  grep -w 23414 Vseq\&C/*
+  440  grep -w 23414 Vseq\&C/* | wc
+  441  grep -w 23414 Vseq\&C/* | less -S
+  442  less -S Vseq\&C/mvp_viral_cluster_representative_seqs.txt 
+  443  grep -w 23414 Vseq\&C/* | less -S
+  444  less -S bacteria.phage_seeker.out
+  445  ls 
+  446  ls -lh
+  447  perl ./phage_seeker.pl -i 2157 -taxfile superkingdom2descendents.txt -interactionfile mvp_interactions.txt -repseqfile Vseq\&C/mvp_viral_cluster_representative_seqs.txt > archaea.phage_seeker.out
+  448  ls -l
+  449  ls -lrth
+  450  wc -l bacteria.phage_seeker.out archaea.phage_seeker.out 
+  451  less archaea.phage_seeker.out 
+  452  ls /hosts/linuxhome/mgx/tmp/PATRIC/
+  453  cd /hosts/linuxhome/mgx/tmp/PATRIC/
+  454  ls -l
+  455  ls patricdb-2017-12-04
+  456  ls -l patricdb-2018-01-16
+  457  ls -l patricdb-2017-11-24
+  458  ls -l
+  459  ls -l patricdb-2017-11-24
+  460  less patricdb-2017-11-24/1120917.3.fna 
+  461  less patricdb-2017-11-24/1120917.3.fna 
+  462  less patricdb-2017-11-24/551115.6.fna
+  463  ls -l patricdb-2017-11-24/264.*fna
+  464  ls -l patricdb-201*/264.*fna
+  465  head -1 patricdb-2017-06-14/264.17.fna patricdb-2017-06-14/264.20.fna patricdb-2017-06-14/264.22.fna patricdb-2017-06-14/264.23.fna
+  466  ls
+  467  ls patricdb-2017-06-14/CheckM/ | wc
+  468  ls patricdb-2017-06-14/CheckM/
+  469  ls patricdb-2017-06-14/CheckM/batch151 | wc
+  470  ls patricdb-2017-06-14/CheckM/batch151
+  471  ls patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  472  lesxs patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  473  less patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  474  less patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  475  less -S patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  476  cut -d "."  patricdb-2017-06-14/CheckM/batch151/summary.txt | head
+  477  cut -d "." -f 1 patricdb-2017-06-14/CheckM/batch151/summary.txt | head
+  478  less -S patricdb-2017-06-14/CheckM/batch151/summary.txt 
+  479  cut -d "." -f 1 patricdb-2017-06-14/CheckM/batch151/summary.txt | head
+  480  ls
+  481  touch checkm_results.txt
+  482  head patricdb-2017-06-14/CheckM/batch151/summary.txt
+  483  head patricdb-2017-06-14/CheckM/batch151/summary.txt | perl -ne '@a=split/\t/,$_;'
+  484  head patricdb-2017-06-14/CheckM/batch151/summary.txt | perl -ne '@a=split/\t/,$_;@b=split/\./,$a[0];$s=$a[-3]-$a[-2];print"$b[0]\t$a[0]\t$s\t$_";' | less -S
+  485  cat patricdb-*/CheckM/batch*/summary.txt | perl -ne '@a=split/\t/,$_;@b=split/\./,$a[0];$s=$a[-3]-$a[-2];print"$b[0]\t$a[0]\t$s\t$_";' > checkm_results.txt 
+  486  cat patricdb-*/CheckM/batch*/summary.txt | perl -ne '@a=split/\t/,$_;@b=split/\./,$a[0];$s=$a[-3]-$a[-2];print"$b[0]\t$a[0]\t$s\n";' > checkm_results.txt 
+  487  wc -l checkm_results.txt
+  488  less checkm_results.txt
+  489  vi checkm_results.txt
+  490  sort -n checkm_results.txt | less
+  491  grep -v Bin checkm_results.txt | wc -l
+  492  grep -v Bin checkm_results.txt > lll
+  493  mv lll checkm_results.txt 
+  494  sort -n checkm_results.txt | less
+  495  ls patricdb-201*/9.55*
+  496  less -S patricdb-2017-06-14/9.55.fna
+  497  sort -n checkm_results.txt | less
+  498  vi checkm_results.txt
+  499  less checkm_results.txt
